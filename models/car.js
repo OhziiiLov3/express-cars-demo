@@ -25,3 +25,19 @@ const cars = [
   },
 ];
 
+
+
+const getAll = () =>{
+    return cars
+}
+
+
+
+
+
+
+
+module.exports ={
+getAll
+}
+
