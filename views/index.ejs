@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <a href="/cars">See All Cars</a>
-  </body>
-</html>
+<%- include('./partials/head') %>
+<h1 class="text-center py-4"><%= title %></h1>
+<p class="text-center">Welcome to <%= title %></p>
+<a  class="mx-5" href="/cars">See All Cars</a>
+
+
+<%- include('./partials/footer') %>

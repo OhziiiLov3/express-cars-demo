@@ -1,17 +1,28 @@
 <%-include('../partials/head') %>
 
 
-<h1>Show Page</h1>
-<p><strong>Car Id: <%= car.id%></strong></p>
-<h2>Make: <%=car.make%></h2>
-<img src="<%=car.image%>" alt="<%=car.make%>">
-<ul>
+<!-- <h2>Make: <%=car.make%></h2>
+    <img src="<%=car.image%>" alt="<%=car.make%>">
+    <ul>
     <li>Year: <%= car.year%></li>
     <li>Is Used: <%= car.isUsed ? "Yes" : "No"%></li>
 </ul>
 
-<a href="/cars">Go Back</a>
+<a href="/cars">Go Back</a> -->
 
+
+<h1 class="text-center">Show Page</h1>
+<div class="card mx-auto" style="width: 18rem;">
+    <img src="<%=car.image%>" class="card-img-top" alt="<%=car.make%>">
+    <div class="card-body">
+      <p><strong>Car Id: <%= car.id%></strong></p>
+    <h5 class="card-title">Make: <%=car.make%></h5>
+    <p class="card-text">Year: <%= car.year%></p>
+    <p class="card-text">Is Used: <strong><%= car.isUsed ? "Yes" : "No"%></strong></p>
+    <a href="/cars" class="btn btn-primary">Go Back</a>
+    <a href="#" class="btn btn-warning">Edit</a>
+  </div>
+</div>
 
 
 
