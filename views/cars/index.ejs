@@ -5,8 +5,9 @@
     <% cars.forEach((car)=>{ %>
         <h1><%= car.make%></h1>
         <li>Year: <%= car.year%></li>
-        <li>Used: <%= car.isUsed%></li>
+        <li>Used: <%= car.isUsed ? "Yes" : "No" %></li>
    <% }) %>
+   <a href="/">Go Back</a>
 </ul>
 
 <%- include('../partials/footer') %> 
