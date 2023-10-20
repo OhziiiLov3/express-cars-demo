@@ -31,13 +31,15 @@ const getAll = () =>{
     return cars
 }
 
-
-
-
+const getOne = (id) =>{
+  id = parseInt(id);
+  return cars.find(car => car.id === id)
+}
 
 
 
 module.exports ={
-getAll
+getAll,
+getOne
 }
 
